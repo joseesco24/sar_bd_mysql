@@ -1,0 +1,24 @@
+{
+	"name": "sar_bd_mysql",
+	"version": "1.0.0",
+	"description": "This repository corresponds to the sar system main database..",
+	"author": {
+		"email": "josed.escobar@outlook.com",
+		"name": "joseesco24"
+	},
+	"readme": "readme.md",
+	"scripts": {
+		"docker-image-build": "docker compose -f docker_compose/image.build.yaml build",
+		"docker-image-push": "docker push ghcr.io/joseesco24/sar_bd_mysql",
+		"docker-full-stop": "docker compose -f docker_compose/deploy.full.yaml down",
+		"docker-full-start": "docker compose -f docker_compose/deploy.full.yaml up",
+		"commitmsg": "bash hooks/commit-msg.sh",
+		"precommit": "bash hooks/pre-commit.sh",
+		"postinstall": "npx husky install"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^18.6.1",
+		"@commitlint/config-conventional": "^18.6.2",
+		"husky": "^9.0.11"
+	}
+}
