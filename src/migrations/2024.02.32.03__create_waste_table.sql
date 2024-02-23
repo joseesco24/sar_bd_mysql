@@ -5,7 +5,7 @@ create table
         `type` integer not null,
         `packaging` integer not null,
         `weight_in_kg` decimal(10, 2) not null,
-        `volumeInL` decimal(10, 2) not null,
+        `volume_in_l` decimal(10, 2) not null,
         `description` text not null,
         `note` text default null,
         foreign key (`request_uuid`) references `collect_request` (`uuid`),
