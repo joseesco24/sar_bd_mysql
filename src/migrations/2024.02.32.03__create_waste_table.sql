@@ -8,7 +8,7 @@ create table
         `volumeInL` decimal(10, 2) not null,
         `description` text not null,
         `note` text default null,
-        foreign key (`request_uuid`) references `request` (`uuid`),
+        foreign key (`request_uuid`) references `collect_request` (`uuid`),
         foreign key (`type`) references `parameter` (`id`),
         foreign key (`packaging`) references `parameter` (`id`)
     );
