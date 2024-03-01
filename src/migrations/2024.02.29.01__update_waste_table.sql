@@ -8,14 +8,14 @@ insert into
 values
     (
         '7',
-        'statewaste',
+        'stateWaste',
         'solido',
         'residuo en estado solido',
         '1'
     ),
     (
         '8',
-        'statewaste',
+        'stateWaste',
         'liquido',
         'residuo en estado liquido',
         '1'
