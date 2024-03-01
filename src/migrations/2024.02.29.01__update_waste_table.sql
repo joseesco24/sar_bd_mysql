@@ -1,7 +1,22 @@
-ALTER TABLE `sarAdmin`.`waste` 
-ADD COLUMN `isotopes_number` DECIMAL(10,2) NULL AFTER `volume_in_l`,
-ADD COLUMN `state_waste` INT NULL AFTER `isotopes_number`,
-ADD COLUMN `store` INT NULL AFTER `state_waste`;
+alter table `waste`
+add column `isotopes_number` decimal(10, 2) null after `volume_in_l`,
+add column `state_waste` int null after `isotopes_number`,
+add column `store` int null after `state_waste`;
 
-INSERT INTO `sarAdmin`.`parameter` (`id`,`domain`, `value`, `description`, `active`) VALUES ('7','stateWaste', 'Solido', 'Residuo en estado solido', '1');
-INSERT INTO `sarAdmin`.`parameter` (`id`,`domain`, `value`, `description`, `active`) VALUES ('8','stateWaste', 'Liquido', 'Residuo en estado liquido', '1');
+insert into
+    `parameter` (`id`, `domain`, `value`, `description`, `active`)
+values
+    (
+        '7',
+        'statewaste',
+        'solido',
+        'residuo en estado solido',
+        '1'
+    ),
+    (
+        '8',
+        'statewaste',
+        'liquido',
+        'residuo en estado liquido',
+        '1'
+    );
