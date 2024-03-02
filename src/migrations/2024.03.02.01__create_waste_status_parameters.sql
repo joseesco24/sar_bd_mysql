@@ -19,8 +19,8 @@ values
         'en revisión',
         'residuos cuyas peticiones de recolección están siendo revisadas',
         true,
-        now (),
-        now ()
+        current_timestamp(),
+        current_timestamp()
     ),
     (
         10,
@@ -29,8 +29,8 @@ values
         'recolección rechazada',
         'residuo cuyas peticiones de recolección han sido rechazadas',
         true,
-        now (),
-        now ()
+        current_timestamp(),
+        current_timestamp()
     ),
     (
         11,
@@ -39,8 +39,8 @@ values
         'recolección aprobada',
         'residuos cuyas peticiones de recolección han sido aprobadas',
         true,
-        now (),
-        now ()
+        current_timestamp(),
+        current_timestamp()
     ),
     (
         12,
@@ -49,8 +49,8 @@ values
         'recolección pendiente de agendamiento',
         'residuos cuyas peticiones de recolección están pendientes de agendamiento',
         true,
-        now (),
-        now ()
+        current_timestamp(),
+        current_timestamp()
     ),
     (
         13,
@@ -59,8 +59,8 @@ values
         'recolección en curso',
         'residuo cuya recolección está en curso',
         true,
-        now (),
-        now ()
+        current_timestamp(),
+        current_timestamp()
     ),
     (
         14,
@@ -69,8 +69,8 @@ values
         'en tránsito de origen a bodega temporal',
         'residuo que ya fue recolectado y está en tránsito a la bodega temporal',
         true,
-        now (),
-        now ()
+        current_timestamp(),
+        current_timestamp()
     ),
     (
         15,
@@ -79,8 +79,8 @@ values
         'en almacenamiento temporal',
         'residuos que ya fueron almacenados en la bodega temporal',
         true,
-        now (),
-        now ()
+        current_timestamp(),
+        current_timestamp()
     ),
     (
         16,
@@ -89,8 +89,8 @@ values
         'en clasificación',
         'residuos que están siendo clasificados en la bodega temporal',
         true,
-        now (),
-        now ()
+        current_timestamp(),
+        current_timestamp()
     ),
     (
         17,
@@ -99,8 +99,8 @@ values
         'en tratamiento',
         'residuos que están siendo tratados en la bodega temporal',
         true,
-        now (),
-        now ()
+        current_timestamp(),
+        current_timestamp()
     ),
     (
         18,
@@ -109,8 +109,8 @@ values
         'listo para almacenar de forma definitiva',
         'residuos que ya fueron tratados y están listos para ser almacenados de forma definitiva',
         true,
-        now (),
-        now ()
+        current_timestamp(),
+        current_timestamp()
     ),
     (
         19,
@@ -119,8 +119,8 @@ values
         'en tránsito de origen a bodega definitiva',
         'residuos que están en tránsito a la bodega definitiva',
         true,
-        now (),
-        now ()
+        current_timestamp(),
+        current_timestamp()
     ),
     (
         20,
@@ -129,8 +129,8 @@ values
         'almacenado de forma definitiva',
         'residuos que ya fueron almacenados de forma definitiva',
         true,
-        now (),
-        now ()
+        current_timestamp(),
+        current_timestamp()
     );
 
 commit;

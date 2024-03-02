@@ -16,7 +16,7 @@ add column `create` timestamp null after `active`;
 
 update `parameter`
 set
-    `create` = now ()
+    `create` = current_timestamp()
 where
     `create` is null;
 
@@ -27,7 +27,7 @@ add column `update` timestamp null after `create`;
 
 update `parameter`
 set
-    `update` = now ()
+    `update` = current_timestamp()
 where
     `update` is null;
 

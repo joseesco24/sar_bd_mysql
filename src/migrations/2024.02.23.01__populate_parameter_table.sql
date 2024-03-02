@@ -1,14 +1,7 @@
 start transaction;
 
 insert into
-    `parameter` (
-        `id`,
-        `domain`,
-        `order`,
-        `value`,
-        `description`,
-        `active`
-    )
+    `parameter` (`id`, `domain`, `value`, `description`, `active`)
 values
     (
         1,
