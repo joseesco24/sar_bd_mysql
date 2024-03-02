@@ -1,3 +1,5 @@
+start transaction;
+
 create table
     `parameter` (
         `id` integer not null primary key,
@@ -6,3 +8,5 @@ create table
         `description` text not null,
         `active` boolean not null
     );
+
+commit;

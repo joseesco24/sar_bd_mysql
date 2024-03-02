@@ -1,3 +1,5 @@
+start transaction;
+
 alter table `waste`
 add column `isotopes_number` decimal(10, 2) null after `volume_in_l`,
 add column `state_waste` int null after `isotopes_number`,
@@ -20,3 +22,5 @@ values
         'residuo en estado liquido',
         '1'
     );
+
+commit;

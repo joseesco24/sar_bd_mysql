@@ -1,3 +1,5 @@
+start transaction;
+
 create table
     `waste` (
         `uuid` varchar(36) not null primary key,
@@ -12,3 +14,5 @@ create table
         foreign key (`type`) references `parameter` (`id`),
         foreign key (`packaging`) references `parameter` (`id`)
     );
+
+commit;
