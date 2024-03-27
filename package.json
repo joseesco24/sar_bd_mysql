@@ -1,6 +1,6 @@
 {
 	"name": "sar_bd_mysql",
-	"version": "v1.3.1",
+	"version": "v1.4.0",
 	"description": "This repository corresponds to the sar system main database..",
 	"author": {
 		"email": "josed.escobar@outlook.com",
